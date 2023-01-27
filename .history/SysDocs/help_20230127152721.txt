@@ -1,0 +1,41 @@
+https://www.youtube.com/watch?v=EUMpUUXKvP0&ab_channel=Bob%27sProgrammingAcademy
+
+INSTALANDO UM PROJETO NOVO DJANGO E PYTHON
+
+ABRA VSCODE NA PASTA DO PROJETO
+
+ATUALIZANDO PIP:
+
+pip install update  
+
+python.exe -m pip install --upgrade pip --user
+
+*****************************************************************
+CRIANDO AMBIENTE VIRTUAL VENV
+
+python -m venv .venv
+
+source .venv/Scripts/activate
+
+python.exe -m pip install -U autopep8
+
+*****************************************************************
+
+CRIANDO PROJETO CORE
+
+pip install -U django { django_extensions python-decouple dj-database-url}>> sao extensoes pra uso avançado
+
+django-admin startproject django_project . >>> (django_project >> nome do prejeto core )
+
+python manage.py runserver >> ativa servidor localhost
+python manage.py runserver 0.0.0.0:8000 >> pode mudar porta passando esse parametro 0.0.0.0:xxxx
+
+*****************************************************************
+
+CRIANDO MODULOS NA APLICAÇÃO
+
+python manage.py startapp NOME_DA_APLICAÇÃO
+
+pip freeze > requirements.txt
+
+*****************************************************************
